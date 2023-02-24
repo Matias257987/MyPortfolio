@@ -2,6 +2,10 @@
 import "./App.css";
 import { NavBar } from "./componentes/NavBar/NavBar";
 import { Banner } from "./componentes/Banner/Banner";
+import { Skills } from "./componentes/Skills/Skills";
+import { Projects } from "./componentes/Projects/Projects";
+import { Contact } from "./componentes/Contact/Contact";
+import { Footer } from "./componentes/Footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -9,6 +13,10 @@ function App() {
     <div className="App">
       <NavBar />
       <Banner />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }
