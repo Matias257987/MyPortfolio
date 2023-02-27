@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
 import HeaderImg from "../../assets/img/header-img.svg";
 
 export const Banner = () => {
@@ -14,15 +13,6 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
-
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -47,6 +37,15 @@ export const Banner = () => {
     }
   };
 
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+    return () => {
+      clearInterval(ticker);
+    };
+  }, [text]);
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -54,19 +53,25 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Bienvenidos a mi portfolio</span>
             <h1>
-              {"Hola soy un desarrollador web"}
+              {"Hola mi nombre es Matias y soy..."}
               <br />
               <span className="wrap">{text}</span>
             </h1>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Quibusdam rerum quaerat rem eligendi deleniti reprehenderit vero
-              dolor id, saepe voluptates in at error blanditiis et provident
-              aliquid omnis facere tempore.
+              Soy Full Stack Web Developer, con experiencia realizando proyectos
+              Full Stack desarrollados en el stack PERN con React, Redux,
+              PostgreSQL, Express, Node js, HTML, CSS, Express, Java Script y
+              Sequelize. <br />
+              <br /> Uno de los proyectos fue realizado en equipo utilizando
+              SCRUM con sprints de una semana. <br />
+              <br /> Soy una persona con excelente formación académica,
+              resiliente y con buenos valores; lo cual me hace un profesional
+              muy comprometido y apasionado en lo que hago, con pensamiento
+              analítico y creativo, en búsqueda activa de resultados y
+              resolución de problemas, orientación, integración y excelente
+              trabajo en equipo, empatía, iniciativa, curiosidad y dedicación a
+              lo que hago.
             </p>
-            <button onClick={() => console.log("connect")}>
-              Let's connect <ArrowRightCircle size={25} />
-            </button>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={HeaderImg} alt="Header img" />
