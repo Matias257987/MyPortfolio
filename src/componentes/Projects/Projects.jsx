@@ -11,16 +11,21 @@ export const Projects = () => {
     {
       title: "Henry Books",
       description: "E-commerce de libros",
+      repo: "https://github.com/adrian4058/HenryBooks",
       imgUrl: projImg2,
     },
     {
       title: "Breeds Dogs",
       description: "App donde puedes buscar y/o crear razas de perros",
+      repo: "https://github.com/Matias257987/PI-Dogs",
+      deploy: "https://front-dogs.onrender.com/",
       imgUrl: projImg1,
     },
     {
       title: "Cat Adventure",
       description: "Juego para android desarrolado con Unity",
+      deploy:
+        "https://play.google.com/store/apps/details?id=com.Pity.CatsAdventure&hl=en&gl=US&pli=1",
       imgUrl: projImg3,
     },
   ];
