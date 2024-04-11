@@ -1,6 +1,13 @@
 import { Col } from "react-bootstrap";
 
-export const ProjectCard = ({ title, description, imgUrl, repo, deploy }) => {
+export const ProjectCard = ({
+  title,
+  description,
+  imgUrl,
+  repo,
+  deploy,
+  muestra,
+}) => {
   return (
     <Col size={12} sm={6} md={4}>
       <div className="proj-imgbx">
@@ -24,6 +31,17 @@ export const ProjectCard = ({ title, description, imgUrl, repo, deploy }) => {
             <a
               className="btn btn-outline-info"
               href={deploy}
+              target="_blank"
+              rel="noreferrer"
+            >
+              ir al sitio
+            </a>
+          ) : null}
+          <br />
+          {muestra ? (
+            <a
+              className="btn btn-outline-info"
+              href={muestra}
               target="_blank"
               rel="noreferrer"
             >

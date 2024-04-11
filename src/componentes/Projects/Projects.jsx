@@ -33,7 +33,7 @@ export const Projects = () => {
       title: "ElectronApp",
       description:
         "Aplicacion para administracion de empleados. Repositorio y Deploy privados",
-      Muestra: "https://vimeo.com/933127541?share=copy",
+      muestra: "https://vimeo.com/933127541?share=copy",
       imgUrl: projImg4,
     },
   ];
