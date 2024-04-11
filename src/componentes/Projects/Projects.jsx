@@ -3,6 +3,7 @@ import { ProjectCard } from "../ProjectCard/ProjectCard";
 import projImg1 from "../../assets/img/BreedsDogs.jpg";
 import projImg2 from "../../assets/img/HenryBooks.jpg";
 import projImg3 from "../../assets/img/gato2.jpg";
+import projImg3 from "../../assets/img/ElectronApp.jpg";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import "animate.css";
 
@@ -28,6 +29,13 @@ export const Projects = () => {
         "https://play.google.com/store/apps/details?id=com.Pity.CatsAdventure&hl=en&gl=US&pli=1",
       imgUrl: projImg3,
     },
+    {
+      title: "ElectronApp",
+      description:
+        "Aplicacion para administracion de empleados. Repositorio y Deploy privados",
+      Muestra: "https://vimeo.com/933127541?share=copy",
+      imgUrl: projImg3,
+    },
   ];
 
   return (
@@ -35,38 +43,6 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col size={12}>
-            {/* ESTO GENERA LA ANIMACION EN LAS TARJETAS
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                > 
-                  
-                TABLERO PARA SEPARAR TARJETAS DE 3 EN 3
-                <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                  <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                  </Nav.Item> 
-                  <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                  </Nav.Item>
-                </Nav>
-
-                  ESTO GENERA LA ANIMACION EN LAS TARJETAS
-                  <Tab.Content
-                    id="slideInUp"
-                    className={
-                      isVisible ? "animate__animated animate__slideInUp" : ""
-                    }
-                  > 
-                </div> 
-              )} 
-            </TrackVisibility> */}
             <h2>Projects</h2>
             <p>
               En esta sección podrán encontrar los proyectos en los que tuve el
