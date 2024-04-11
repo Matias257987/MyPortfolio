@@ -19,7 +19,7 @@ export const Projects = () => {
       title: "Breeds Dogs",
       description: "App donde puedes buscar y/o crear razas de perros",
       repo: "https://github.com/Matias257987/PI-Dogs",
-      deploy: "https://front-dogs.onrender.com/",
+      deploy: "https://pi-dogs-front-sqve.onrender.com",
       imgUrl: projImg1,
     },
     {
