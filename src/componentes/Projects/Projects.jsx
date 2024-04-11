@@ -3,7 +3,7 @@ import { ProjectCard } from "../ProjectCard/ProjectCard";
 import projImg1 from "../../assets/img/BreedsDogs.jpg";
 import projImg2 from "../../assets/img/HenryBooks.jpg";
 import projImg3 from "../../assets/img/gato2.jpg";
-import projImg3 from "../../assets/img/ElectronApp.jpg";
+import projImg4 from "../../assets/img/ElectronApp.jpg";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import "animate.css";
 
@@ -34,7 +34,7 @@ export const Projects = () => {
       description:
         "Aplicacion para administracion de empleados. Repositorio y Deploy privados",
       Muestra: "https://vimeo.com/933127541?share=copy",
-      imgUrl: projImg3,
+      imgUrl: projImg4,
     },
   ];
 
